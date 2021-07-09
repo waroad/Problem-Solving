@@ -22,3 +22,4 @@ for i in range(n):
         distance=tmp_dis
         coordinate = i
 print(*arr[coordinate])
+ 
