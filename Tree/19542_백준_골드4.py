@@ -61,7 +61,7 @@ loop2(s-1,-1)
 ans=-2
 loop3(s-1,-1)
 print(ans)
-
+ 
 
 
 
