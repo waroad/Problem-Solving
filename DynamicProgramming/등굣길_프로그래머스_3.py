@@ -1,3 +1,5 @@
+# dp 로 길 찾는 매우 기본적인 문제.
+# 딱히 더 할 말도 없다.
 from collections import deque
 
 
