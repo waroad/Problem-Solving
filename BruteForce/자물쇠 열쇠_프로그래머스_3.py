@@ -1,3 +1,8 @@
+# 카카오 블라인드 채용 문제. 30분 정도
+# 그냥저냥 brutal force 로 2차원 배열 돌려가면서 다 대입해보는
+# 문제이다. 중간에 for 구문에서 값을 하나 잘못 넣어서 30분정도 걸렸다.
+
+
 def solution(key, lock):
     lock2=[x[:] for x in lock]
     for t in range(4):
