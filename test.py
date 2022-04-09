@@ -1,30 +1,49 @@
-def solution(key, lock):
-    lock2=[x[:] for x in lock]
-    for t in range(4):
-        key2=[x[:] for x in key]
-        for i in range(len(key)):
-            for j in range(len(key)):
-                key[i][j]=key2[j][len(key)-i-1]
-        for a in range(len(key)-1, -len(lock),-1):
-            for b in range(len(key)-1, -len(lock),-1):
-                tmp=0
-                for i in range(len(lock)):
-                    for j in range(len(lock)):
-                        if 0<=i+a<len(key) and 0<=j+b<len(key):
-                            lock[i][j]+=key[i+a][j+b]
-                        if lock[i][j]!=1:
-                            # for k in range(len(lock)):
-                            #     print(*lock[k])
-                            # print(a,b,i,j)
-                            tmp=1
-                            break
-                        if i==len(lock)-1 and j==len(lock)-1:
-                            return True
-                    if tmp==1:
-                        lock = [x[:] for x in lock2]
-                        break
+# 퍼즐 조각 채우기 푸는 중, 시간이 늦어서 내일 끝내기로
+def solution(game_board, table):
+    components = []
+    components2 = []
 
-    return False
+    def cut(a, b, board, components_selected):
+        board[a][b] = 0
+        tmp=components_selected[len(components_selected) - 1][len(components_selected[len(components_selected) - 1]) - 1]
+        if a + 1 < len(table) and board[a + 1][b] == 1:
+            components_selected[len(components_selected) - 1].append([tmp[0] + 1, tmp[1]])
+            cut(a + 1, b, board, components_selected)
+        if b + 1 < len(table[0]) and board[a][b + 1] == 1:
+            components_selected[len(components_selected) - 1].append([tmp[0], tmp[1] + 1])
+            cut(a, b + 1, board, components_selected)
+        if b > 0 and board[a][b - 1] == 1:
+            components_selected[len(components_selected) - 1].append([tmp[0], tmp[1] - 1])
+            cut(a, b - 1, board, components_selected)
+
+    for i in range(len(table)):
+        for j in range(len(table[0])):
+            if table[i][j] == 1:
+                components.append([[0, 0]])
+                cut(i, j, table, components)
+    for i in range(len(table)):
+        for j in range(len(table[0])):
+            game_board[i][j]=(game_board[i][j]+1)//2
+    for i in range(len(table)):
+        for j in range(len(table[0])):
+            if game_board[i][j] == 1:
+                components2.append([[0, 0]])
+                cut(i, j, game_board, components2)
+    components.sort()
+    components2.sort()
+    for i in components:
+        print(i)
+    print("")
+    for i in components2:
+        print(i)
+    answer = -1
+
+    for i in components:
+
+    return answer
 
 
-print(solution([[0, 0, 0], [1, 0, 0], [0, 1, 1]], [[1, 1, 1], [1, 1, 0], [1, 0, 1]]))
+print(solution([[1, 1, 0, 0, 1, 0], [0, 0, 1, 0, 1, 0], [0, 1, 1, 0, 0, 1], [1, 1, 0, 1, 1, 1], [1, 0, 0, 0, 1, 0],
+                [0, 1, 1, 1, 0, 0]],
+               [[1, 0, 0, 1, 1, 0], [1, 0, 1, 0, 1, 0], [0, 1, 1, 0, 1, 1], [0, 0, 1, 0, 0, 0], [1, 1, 0, 1, 1, 0],
+                [0, 1, 0, 0, 0, 0]]))
