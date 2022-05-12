@@ -1,3 +1,4 @@
+import copy
 import math
 import matplotlib.pyplot as plt
 from operator import itemgetter
@@ -37,7 +38,7 @@ def make_arr(a, b, c):
     arr = [a, b, c]
     if a >= 0 and b >= 0:
         arr.append(1)
-    elif a >= 0 and b < 0:
+    elif a >= 0 > b:
         arr.append(2)
     elif a<0 and b<0:
         arr.append(3)
@@ -49,37 +50,14 @@ def make_arr(a, b, c):
         arr.append(-10000000000)
     else:
         arr.append(b/a)
-    # arr: [x, y, 원 ind, 사분면, 기울기, 왼:0오:1]
+    # arr: [x좌표, y좌표, 원 ind, 사분면, 기울기, 시계방향 기준 먼저 나오는 접점이면:0, 아니면:1]
     return arr
 
 
-def find(a):
-    dict1={cords[a][2]:0}
-    arr1=[]
-    cnt=0
-    ff=1
-    for i in range(a,a+len(cords)):
-        t=i%len(cords)
-        if ff==1:
-            if cords[t][5] == 1 and cords[t][2] in arr1:
-                for dots in arr1:
-                    dict1[dots]=0
-                cnt+=1
-                ff=0
-                arr1=[]
-            else:
-                arr1.append(cords[t][2])
-        else:
-            if cords[t][5]==0:
-                arr1.append(cords[t][2])
-            elif cords[t][5]==1 and cords[t][2] not in dict1:
-                cnt+=1
-                for dots in arr1:
-                    dict1[dots]=0
-                arr1=[]
-    return cnt
+# 당분간 비밀입니다~
 
 
+used_lines=[]
 min_d=1000000000
 min_ind=0
 cords = []
@@ -100,21 +78,28 @@ for ind, circle in enumerate(circles):
     cords.append(t2)
 cords.sort(key=itemgetter(4),reverse=True)
 cords.sort(key=itemgetter(3))
-ans=1000000000
 for ind,i in enumerate(cords):
-    if i[2]==min_ind and i[5]==0:
-        ans=find(ind)
-'''
-# 시각화 하기
-plt.axvline(x=0, color = 'r') # draw x =0
-plt.axhline(y=0, color = 'r')
-plt.scatter(0,0)
-colors = "bgrcmyk"
-for ind,c in enumerate(cords):
-    plt.scatter(c[0],c[1],c=colors[c[2]%7])
-    plt.annotate(str(ind)+'-'+str(c[5]),(c[0],c[1]))
-plt.show()
-'''
+    if i[5]==0:
+        ans=find(ind,0,{})
+# 접점들 시각화하기
+# plt.axvline(x=0, color = 'r') # draw x =0
+# plt.axhline(y=0, color = 'r')
+# plt.scatter(0,0)
+# colors = "bgrcmyk"
+# for ind,c in enumerate(cords):
+#     plt.scatter(c[0],c[1],c=colors[c[2]%7])
+#     plt.annotate(str(ind)+'-'+str(c[5]),(c[0],c[1]))
+
+# 원과 접선들 시각화하기
+# figure, axes = plt.subplots()
+# for i in circles:
+#     a=plt.Circle((i[0],i[1]),i[2],fill=False)
+#     axes.add_artist(a)
+# for i in used_lines:
+#     plt.plot([0,i[0]*10],[0,i[1]*10])
+# plt.xlim([-80,80])
+# plt.ylim([-80,80])
+# plt.show()
 f = open("output.txt", 'w')
 f.write(str(ans))
 f.close()
