@@ -45,4 +45,3 @@ def solution(n, paths, gates, summits):
         find(i, 0)
     ans[0] += 1
     return ans
-

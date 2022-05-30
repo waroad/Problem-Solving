@@ -12,7 +12,6 @@ def solution(rc, operations):
             for i in range(ud-2,0,-1):
                 tt.append(rc[i-ind][0])
             cnt=0
-            # print(tt)
             for j in range(1,lr):
                 rc[0-ind][j]=tt[cnt]
                 cnt+=1
