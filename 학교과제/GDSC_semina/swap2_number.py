@@ -1,7 +1,8 @@
 def swap2(a,b):
-    tmp=a
-    a=b
-    b=tmp
+    # tmp=a
+    # a=b
+    # b=tmp
+    a, b = b, a
     print("로컬 a id:",id(a), "\n로컬 a 값:", a, "\n로컬 b id:",id(b), "\n로컬 b 값:",b, end="\n\n")
     return a,b
 
