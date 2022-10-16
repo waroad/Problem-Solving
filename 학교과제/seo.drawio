@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-16T15:33:24.864Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="nTGdcNGSHdi6pWLU6_1h" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-16T17:22:29.744Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="FtlcGo9meirMOw-pWDz2" version="20.4.0" type="github">
   <diagram id="O5Nt3UZu3TyDV2IO9KQv" name="페이지-1">
-    <mxGraphModel dx="823" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="4100" math="0" shadow="0">
+    <mxGraphModel dx="680" dy="377" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="4100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -281,8 +281,8 @@
         <mxCell id="4AUw625GRqSKtKUmd0re-6" value="has" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="1180" y="1470.51" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4AUw625GRqSKtKUmd0re-8" value="writes" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;direction=west;" parent="1" vertex="1">
-          <mxGeometry x="1472" y="1380.51" width="120" height="60" as="geometry" />
+        <mxCell id="4AUw625GRqSKtKUmd0re-8" value="makes" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;direction=west;" parent="1" vertex="1">
+          <mxGeometry x="1472" y="1350" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="4AUw625GRqSKtKUmd0re-10" value="" style="shape=link;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="4AUw625GRqSKtKUmd0re-8" target="-fTK9KnJdiPH2uhLEuWP-16" edge="1">
           <mxGeometry relative="1" as="geometry">
