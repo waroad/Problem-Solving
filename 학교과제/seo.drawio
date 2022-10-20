@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T06:25:07.897Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="401NumNS6dXMy7jgQkWk" version="20.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-20T06:49:59.151Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="xSyZ-OF7NGOfEy-hqfDt" version="20.4.2" type="github">
   <diagram id="O5Nt3UZu3TyDV2IO9KQv" name="페이지-1">
     <mxGraphModel dx="996" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="4100" math="0" shadow="0">
       <root>
@@ -651,6 +651,12 @@
         </mxCell>
         <mxCell id="3KK7-B3DAcxlrKd_nuLh-17" value="writes" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=none;gradientColor=default;direction=west;" parent="1" vertex="1">
           <mxGeometry x="1220" y="1330.9999999999998" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kGi1UohfkSW2uIYW4kNr-1" value="employer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1117" y="989.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kGi1UohfkSW2uIYW4kNr-3" value="employee" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="986.51" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
