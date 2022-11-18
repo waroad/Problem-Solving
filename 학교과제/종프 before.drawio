@@ -1,1 +1,75 @@
-<mxfile host="app.diagrams.net" modified="2022-11-18T17:11:30.987Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" version="20.5.3" etag="uymBy-7kPY-WJJUCfPh0" type="github"><diagram id="374WehRIeedqe-dWyZAL">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-18T17:21:18.752Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="jJDUWwibaSs0Qf2Z9hzc" version="20.5.3" type="github">
+  <diagram id="374WehRIeedqe-dWyZAL" name="페이지-1">
+    <mxGraphModel dx="680" dy="410" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="4100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-1" value="Original repository" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="790" y="580" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-2" value="Developer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R_gMmu3pV7E7Hg05pHn1-2" target="R_gMmu3pV7E7Hg05pHn1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="870" y="620" as="sourcePoint" />
+            <mxPoint x="930" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-4" value="1. Push" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R_gMmu3pV7E7Hg05pHn1-3">
+          <mxGeometry x="-0.3841" y="-1" relative="1" as="geometry">
+            <mxPoint x="21" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-5" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="R_gMmu3pV7E7Hg05pHn1-7" target="R_gMmu3pV7E7Hg05pHn1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="640" as="sourcePoint" />
+            <mxPoint x="840" y="660" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="990" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-6" value="2. Fetch changes from targeted files manually" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R_gMmu3pV7E7Hg05pHn1-5">
+          <mxGeometry x="0.1312" y="-12" relative="1" as="geometry">
+            <mxPoint x="-1" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-7" value="Localized repository" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="580" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-11" value="Translator" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1031.58" y="459.76" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-14" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.631;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.587;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1077.3000000000002" y="520.9" as="sourcePoint" />
+            <mxPoint x="1075.5" y="579.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1010" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-15" value="3. Find files that need to be translated" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R_gMmu3pV7E7Hg05pHn1-14">
+          <mxGeometry x="0.1312" y="-12" relative="1" as="geometry">
+            <mxPoint x="7" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-21" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.631;exitY=1.019;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.587;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1115.7200000000003" y="520.9" as="sourcePoint" />
+            <mxPoint x="1113.92" y="579.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1170" y="549.76" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R_gMmu3pV7E7Hg05pHn1-22" value="4. Translate" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="R_gMmu3pV7E7Hg05pHn1-21">
+          <mxGeometry x="0.1312" y="-12" relative="1" as="geometry">
+            <mxPoint x="22" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
